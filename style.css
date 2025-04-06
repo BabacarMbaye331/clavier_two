@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #d9d9d9;
+}
+.container{
+    width: 75%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    margin-bottom: 20px;
+    border-radius: 0.4rem;
+    /* background-color: gray; */
+
+}
+.container textarea{
+    height: 15vh;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.4);
+}
+.row{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+.row button{
+    cursor: pointer;
+    transition: 0.2s;
+}
+.row button:hover{
+    background-color: black;
+    color: white;
+}
+.row button:active{
+    transform: scale(1.1);
+}
+.one button{
+    padding: 15px 10px;
+    flex: 1;
+    margin: 3px 0;
+    border: none;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+}
+.two button, .trois, .four button, .five .cinq {
+    padding: 15px 10px;
+    flex: 1;
+    margin: 3px 0;
+    border: none;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+}
+#fleche-tab, .fleche-sup{
+    padding: 15px 10px;
+    width: 150px;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+    margin: 3px 0;
+    border: none;
+}
+#space{
+    width: 230px;
+    padding: 15px 10px;
+    margin: 3px 0;
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+} 
+/* style majuscule */
+.three .active {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width : 600px){
+    .container{
+        width: 100%;
+        padding: 5px;
+    }
+    
+}
+
+@media (max-width : 320px){
+    .container{
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .one button, .two button, .trois, #fleche-tab, .fleche-sup, .four button, #space, .five .cinq {
+        font-size: 1re;
+        padding: 5px;
+        margin:  0;
+    }
+}

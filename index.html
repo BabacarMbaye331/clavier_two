@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lien css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- lien favIcone -->
+     <link rel="shortcut icon" href="/favicon.jpg">
+         <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>clavier_two</title>
+</head>
+<body>
+    <div class="container">
+        <textarea name="aaffichage" id="text_affiche" placeholder="saisis votre text..."></textarea>
+        <div class="row one">
+            <button class="numb" data-numb="1">1</button>
+            <button class="numb" data-numb="2">2</button>
+            <button class="numb" data-numb="3">3</button>
+            <button class="numb" data-numb="4">4</button>
+            <button class="numb" data-numb="5">5</button>
+            <button class="numb" data-numb="6">6</button>
+            <button class="numb" data-numb="7">7</button>
+            <button class="numb" data-numb="8">8</button>
+            <button class="numb" data-numb="9">9</button>
+            <button class="numb" data-numb="0">0</button>
+        </div>
+
+        <div class="row two">
+            <button class="lettre">A</button>
+            <button class="lettre">Z</button>
+            <button class="lettre">E</button>
+            <button class="lettre">R</button>
+            <button class="lettre">T</button>
+            <button class="lettre">Y</button>
+            <button class="lettre">U</button>
+            <button class="lettre">I</button>
+            <button class="lettre">O</button>
+            <button class="lettre">P</button>
+        </div>
+
+        <div class="row three">
+            <button id="fleche-tab"><i class="fa-solid fa-lock"></i></button>
+            <button class="lettre trois">Q</button>
+            <button class="lettre trois">S</button>
+            <button class="lettre trois">D</button>
+            <button class="lettre trois">F</button>
+            <button class="lettre trois">G</button>
+            <button class="lettre trois">H</button>
+            <button class="lettre trois">J</button>
+            <button class="lettre trois">K</button>
+            <button class="lettre trois">L</button>
+            <button class="fleche-sup"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+
+        <div class="row four">
+            <button class="lettre trois">W</button>
+            <button class="lettre trois">X</button>
+            <button class="lettre trois">C</button>
+            <button class="lettre trois">V</button>
+            <button class="lettre trois">M</button>
+            <button class="lettre trois">B</button>
+            <button class="lettre trois">N</button>
+            <button class="lettre">!</button>
+            <button class="cinq numb">=</button>
+            <button class="lettre">,</button>
+            <button class="lettre">;</button>
+        </div>
+
+        <div class="row five">
+            <button class="cinq">?</button>
+            <button class="cinq">:</button>
+            <button class="cinq numb">/</button>
+            <button class="cinq numb">+</button>
+            <button class="lettre trois">.</button>
+            <button id="space"></button>
+            <button class="cinq numb">-</button>
+            <button class="cinq numb">*</button>
+            <button class="cinq lettre">@</button>
+            <button class="fleche-eff  cinq"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
